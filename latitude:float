@@ -1,0 +1,2 @@
+      invoke  active_record
+      create    db/migrate/20150522144059_add_latitude_and_longitude_to_locations.rb
