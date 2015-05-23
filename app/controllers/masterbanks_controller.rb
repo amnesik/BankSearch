@@ -1,0 +1,2 @@
+class MasterbanksController < ApplicationController
+end
