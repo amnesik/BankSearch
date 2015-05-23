@@ -6,7 +6,8 @@ class CreateBanks < ActiveRecord::Migration
       t.string :lat
       t.string :long
       t.string :image
-      
+      t.string :name
+      t.string :decription
     end
   end
 end

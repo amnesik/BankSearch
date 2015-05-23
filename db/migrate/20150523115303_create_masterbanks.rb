@@ -3,6 +3,7 @@ class CreateMasterbanks < ActiveRecord::Migration
     create_table :masterbanks do |t|
       t.string :name
       t.string :description
+      t.string :image
       t.timestamps null: false
     end
   end

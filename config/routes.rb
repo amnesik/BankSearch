@@ -1,7 +1,13 @@
 Rails.application.routes.draw do
   devise_for :users
-  get '/banks/index' => 'banks#index'
   root 'banks#index'
+  get '/banks' => 'banks#index'
+  get '/bank/:id' => 'banks#show', as: :bank
+  get '/banks' => 'banks#index'
+  get '/masterbank/:id' => 'masterbanks#show', as: :masterbank
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
