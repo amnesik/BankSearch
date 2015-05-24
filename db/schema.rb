@@ -11,22 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150523115303) do
+ActiveRecord::Schema.define(version: 20150524130454) do
 
   create_table "banks", force: :cascade do |t|
-    t.integer  "masterbank_id"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "masterbanks_id"
+    t.string   "description"
+    t.string   "name"
+    t.string   "image"
     t.string   "lat"
     t.string   "long"
-    t.string   "image"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
   end
 
-  add_index "banks", ["masterbank_id"], name: "index_banks_on_masterbank_id"
-
   create_table "masterbanks", force: :cascade do |t|
-    t.string   "name"
+    t.integer  "bank_id"
+    t.string   "image"
     t.string   "description"
+    t.string   "name"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

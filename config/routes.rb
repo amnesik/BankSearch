@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root 'banks#index'
   get '/banks' => 'banks#index'
   get '/bank/:id' => 'banks#show', as: :bank
-  get '/banks' => 'banks#index'
+  get '/masterbanks' => 'masterbanks#index'
   get '/masterbank/:id' => 'masterbanks#show', as: :masterbank
 
 
