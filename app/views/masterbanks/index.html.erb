@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Masterbanks</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Image</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @masterbanks.each do |masterbank| %>
+      <tr>
+        <td><%= masterbank.name %></td>
+        <td><%= masterbank.description %></td>
+        <td><%= masterbank.image %></td>
+        <td><%= link_to 'Show', masterbank %></td>
+        <td><%= link_to 'Edit', edit_masterbank_path(masterbank) %></td>
+        <td><%= link_to 'Destroy', masterbank, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Masterbank', new_masterbank_path %>
