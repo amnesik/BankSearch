@@ -1,6 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+<<<<<<< HEAD
   bank_id: 1
   image: MyString
   description: MyString
@@ -11,3 +12,13 @@ two:
   image: MyString
   description: MyString
   name: MyString
+=======
+  name: MyString
+  description: MyString
+  image: MyString
+
+two:
+  name: MyString
+  description: MyString
+  image: MyString
+>>>>>>> newAfterMerde

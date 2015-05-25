@@ -11,6 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20150524130454) do
 
   create_table "banks", force: :cascade do |t|
@@ -29,6 +30,27 @@ ActiveRecord::Schema.define(version: 20150524130454) do
     t.string   "image"
     t.string   "description"
     t.string   "name"
+=======
+ActiveRecord::Schema.define(version: 20150525150326) do
+
+  create_table "banks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "lat"
+    t.string   "long"
+    t.string   "image"
+    t.integer  "masterbank_id"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "banks", ["masterbank_id"], name: "index_banks_on_masterbank_id"
+
+  create_table "masterbanks", force: :cascade do |t|
+    t.string   "name"
+    t.string   "description"
+    t.string   "image"
+>>>>>>> newAfterMerde
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end

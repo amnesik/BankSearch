@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @masterbank.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @masterbank.description %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @masterbank.image %>
+</p>
+
+<%= link_to 'Edit', edit_masterbank_path(@masterbank) %> |
+<%= link_to 'Back', masterbanks_path %>
