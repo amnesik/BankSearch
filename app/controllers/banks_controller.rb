@@ -1,12 +1,4 @@
 class BanksController < ApplicationController
-<<<<<<< HEAD
-	def index
-
-	end
-	def show
-		
-	end
-=======
   before_action :set_bank, only: [:show, :edit, :update, :destroy]
 
   # GET /banks
@@ -80,5 +72,4 @@ class BanksController < ApplicationController
     def bank_params
       params.require(:bank).permit(:name, :description, :lat, :long, :image, :masterbank_id)
     end
->>>>>>> newAfterMerde
 end

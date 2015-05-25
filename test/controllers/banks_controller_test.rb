@@ -1,11 +1,7 @@
 require 'test_helper'
 
 class BanksControllerTest < ActionController::TestCase
-<<<<<<< HEAD
-  # test "the truth" do
-  #   assert true
-  # end
-=======
+
   setup do
     @bank = banks(:one)
   end
@@ -51,5 +47,5 @@ class BanksControllerTest < ActionController::TestCase
 
     assert_redirected_to banks_path
   end
->>>>>>> newAfterMerde
+
 end

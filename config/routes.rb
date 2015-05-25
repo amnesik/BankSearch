@@ -2,19 +2,10 @@ Rails.application.routes.draw do
   resources :banks
   resources :masterbanks
   devise_for :users
-<<<<<<< HEAD
-  root 'banks#index'
-  get '/banks' => 'banks#index'
-  get '/bank/:id' => 'banks#show', as: :bank
-  get '/masterbanks' => 'masterbanks#index'
-  get '/masterbank/:id' => 'masterbanks#show', as: :masterbank
 
-
-
-=======
   #get 'show/index'
   root 'banks#index'
->>>>>>> newAfterMerde
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

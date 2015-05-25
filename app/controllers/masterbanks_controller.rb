@@ -1,13 +1,4 @@
 class MasterbanksController < ApplicationController
-<<<<<<< HEAD
-	def show
-		@masterbank = Masterbank.find(params[:id])
-		@banks = Masterbank.banks
-	end
-	def index
-
-	end
-=======
   before_action :set_masterbank, only: [:show, :edit, :update, :destroy]
 
   # GET /masterbanks
@@ -80,5 +71,4 @@ class MasterbanksController < ApplicationController
     def masterbank_params
       params.require(:masterbank).permit(:name, :description, :image)
     end
->>>>>>> newAfterMerde
 end

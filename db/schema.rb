@@ -11,26 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20150524130454) do
 
-  create_table "banks", force: :cascade do |t|
-    t.integer  "masterbanks_id"
-    t.string   "description"
-    t.string   "name"
-    t.string   "image"
-    t.string   "lat"
-    t.string   "long"
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-  end
-
-  create_table "masterbanks", force: :cascade do |t|
-    t.integer  "bank_id"
-    t.string   "image"
-    t.string   "description"
-    t.string   "name"
-=======
 ActiveRecord::Schema.define(version: 20150525150326) do
 
   create_table "banks", force: :cascade do |t|
@@ -50,7 +31,6 @@ ActiveRecord::Schema.define(version: 20150525150326) do
     t.string   "name"
     t.string   "description"
     t.string   "image"
->>>>>>> newAfterMerde
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
